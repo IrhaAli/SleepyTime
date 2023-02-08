@@ -28,14 +28,14 @@ struct SleepModeView: View {
                     DatePicker("Please enter the time:", selection:
                                 $wakeUp,
                                displayedComponents:
-                                .hourAndMinute)
-                                .labelsHidden()
+                            .hourAndMinute)
+                    .labelsHidden()
                 }
                 Section {
                     Text("Desired amount of Sleep")
                         .font(.headline)
                     Stepper("\(sleepAmount.formatted()) hours",
-                                value: $sleepAmount, in: 4...12, step: 0.25)
+                            value: $sleepAmount, in: 4...12, step: 0.25)
                 }
                 Section {
                     Text("Today's stress level")
@@ -54,12 +54,12 @@ struct SleepModeView: View {
         }
     }
     func calulateBedtime() -> String{
-        let betTime: String
+        let bedTime: String
         do {
             let config = MLModelConfiguration()
             let model = try SleepyTimeSleepMode(configuration: config)
             
-            let components = Calender.current.dateComponents([.hour, .minute], from: wakeUp)
+            let components = Calendar.current.dateComponents([.hour, .minute], from: wakeUp)
             let hour = (components.hour ?? 0) * 60 * 60
             let minute = (components.minute ?? 0) * 60
             
@@ -73,10 +73,10 @@ struct SleepModeView: View {
             return bedTime
         }
     }
-}
-
-struct SleepModeView_Previews: PreviewProvider {
-    static var previews: some View {
-        SleepModeView()
+    
+    struct SleepModeView_Previews: PreviewProvider {
+        static var previews: some View {
+            SleepModeView()
+        }
     }
 }

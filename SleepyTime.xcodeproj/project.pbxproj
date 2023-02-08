@@ -14,7 +14,7 @@
 		5A1ACCDF2992AF81006CC686 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ACCDE2992AF81006CC686 /* Persistence.swift */; };
 		5A1ACCE22992AF81006CC686 /* SleepyTime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ACCE02992AF81006CC686 /* SleepyTime.xcdatamodeld */; };
 		5A1ACCE92992B468006CC686 /* SleepModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ACCE82992B468006CC686 /* SleepModeView.swift */; };
-		5A1ACCEB2992C723006CC686 /* SleepyTimeSleepMode.mlproj in Resources */ = {isa = PBXBuildFile; fileRef = 5A1ACCEA2992C723006CC686 /* SleepyTimeSleepMode.mlproj */; };
+		5AC722C02993D31F002D83BE /* SleepyTimeSleepMode.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5AC722BF2993D31F002D83BE /* SleepyTimeSleepMode.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +26,7 @@
 		5A1ACCDE2992AF81006CC686 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		5A1ACCE12992AF81006CC686 /* SleepyTime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SleepyTime.xcdatamodel; sourceTree = "<group>"; };
 		5A1ACCE82992B468006CC686 /* SleepModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepModeView.swift; sourceTree = "<group>"; };
-		5A1ACCEA2992C723006CC686 /* SleepyTimeSleepMode.mlproj */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SleepyTimeSleepMode.mlproj; sourceTree = "<group>"; };
+		5AC722BF2993D31F002D83BE /* SleepyTimeSleepMode.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepyTimeSleepMode.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 		5A1ACCD42992AF80006CC686 /* SleepyTime */ = {
 			isa = PBXGroup;
 			children = (
-				5A1ACCEA2992C723006CC686 /* SleepyTimeSleepMode.mlproj */,
+				5AC722BF2993D31F002D83BE /* SleepyTimeSleepMode.mlmodel */,
 				5A1ACCE82992B468006CC686 /* SleepModeView.swift */,
 				5A1ACCD52992AF80006CC686 /* SleepyTimeApp.swift */,
 				5A1ACCD72992AF80006CC686 /* ContentView.swift */,
@@ -138,7 +138,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A1ACCDD2992AF81006CC686 /* Preview Assets.xcassets in Resources */,
-				5A1ACCEB2992C723006CC686 /* SleepyTimeSleepMode.mlproj in Resources */,
 				5A1ACCDA2992AF81006CC686 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +151,7 @@
 			files = (
 				5A1ACCE22992AF81006CC686 /* SleepyTime.xcdatamodeld in Sources */,
 				5A1ACCDF2992AF81006CC686 /* Persistence.swift in Sources */,
+				5AC722C02993D31F002D83BE /* SleepyTimeSleepMode.mlmodel in Sources */,
 				5A1ACCD82992AF80006CC686 /* ContentView.swift in Sources */,
 				5A1ACCE92992B468006CC686 /* SleepModeView.swift in Sources */,
 				5A1ACCD62992AF80006CC686 /* SleepyTimeApp.swift in Sources */,
